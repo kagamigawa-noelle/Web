@@ -24,8 +24,7 @@ public class LogoutListener implements ServletContextListener, HttpSessionListen
     @Override
     public void sessionCreated(HttpSessionEvent se) {
         /* Session is created. */
-        HttpSession session= se.getSession();
-        System.out.println(session.getAttribute("account")+ " 用户上线啦");
+        System.out.println("有用户上线啦");
     }
 
     @Override
