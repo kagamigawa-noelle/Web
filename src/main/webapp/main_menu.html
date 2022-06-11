@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MAIN_MENU</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            display: flex;
+        }
+        .main .left{
+            background-color: skyblue;
+            width: 15%;
+            height: 710px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main .right{
+            background-color: pink;
+            width: 85%;
+            height: 710px;
+        }
+        .left .bottom{
+            height: 100px;
+        }
+        .right table{
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            /*border: 2px solid black;*/
+        }
+        .right table td,th{
+            width: 100px;
+            text-align: center;
+
+        }
+        .main .left img{
+            display: block;
+            margin-top: 30px;
+            width: 100px;
+            height: 100px;
+            border-radius: 25px;
+        }
+        .main .left span{
+            display: block;
+            width: 100%;
+            background-color: black;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            margin-top: 20px;
+        }
+        .main .left ul{
+            height: 350px;
+            padding-top: 30px;
+            list-style: none;
+        }
+        .main .left ul li{
+            margin: 20px 0;
+        }
+        .main .left ul li a{
+            text-decoration: none;
+        }
+        .bottom{
+            margin-top: 150px;
+            margin-right: 100px;
+            font-size: 14px;
+        }
+        .bottom p{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="left">
+        <img src="" alt="头像">
+        <span>首页</span>
+        <ul>
+            <li><a href="">管理模块</a></li>
+            <li><a href="">教师模块</a></li>
+            <li><a href="">学生模块</a></li>
+            <li><a href="">公共模块</a></li>
+        </ul>
+        <div class="bottom">
+            <p>修改密码</p>
+            <a href="">退出</a>
+        </div>
+
+    </div>
+    <div class="right">
+        <table cellspacing="0" border="2px" cellpadding="0">
+            <tr><th>第一列</th><th>第一列</th><th>第一列</th><th>第一列</th><th>第一列</th><th>第一列</th></tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
